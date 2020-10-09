@@ -1,0 +1,32 @@
+﻿@using OgrenciNotMvc.Models.EntityFramework;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hesap Makinasi</h2>
+<br />
+<form class="form-group" method="post">
+    <div >
+        <div style="margin-top:10px">
+            İşlem Yapılacak Değer 1: <input type="text" name="sayi1" id="sayi1" />
+        </div>
+        <div style="margin-top:10px">
+            İşlem Yapılacak Değer 2: <input type="text" name="sayi2" id="sayi2" />
+        </div>
+        <div style="margin-top:10px">
+            <button class="btn btn-warning">
+                Hesapla
+            </button>
+        </div>
+        <br />
+        Toplam: @ViewBag.tpl <br />
+
+        Çıkarım: @ViewBag.ckrm <br />
+
+        Çarpım: @ViewBag.crpm <br />
+
+        Bölüm: @ViewBag.blm
+    </div>
+</form>
+
